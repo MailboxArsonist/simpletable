@@ -1,0 +1,37 @@
+{
+    "recordsFiltered":2,
+    "data":[{
+        "date":{
+        "data":"30\/01\/2020",
+        "classList":"text-right"
+        },
+        "name":{ 
+            "data":"safari company",
+            "classList":"text-left"
+        },
+            "type": {
+                "data":"Abonnement",
+                "classList":"text-left"
+           },
+            "commission": {
+                "data":"70,00 \u20ac"
+            }
+        },
+        {
+        "date":{
+            "data":"29\/01\/2020",
+            "classList":"text-right"
+            },
+            "name":{
+                "data":"test",
+                "classList":"text-left"
+            },
+                "type":{
+                    "data":"Abonnement",
+                    "classList":"text-left"
+                    },
+                    "commission":{
+                        "data":"70,00 \u20ac"
+                    }
+    }]
+}
