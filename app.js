@@ -1,25 +1,36 @@
 import {DataTable} from "./simpleTable.js"
 
-const options = [{
+const head = [{
     field: 'name',
     label: 'Enterprise',
-    sortable: false
+    sortable: true,
+    classList: 'text-left'
   },{
     field: 'type',
     label: 'Statut',
     sortable: false,
+    classList: 'text-left'
   },{
     field: 'date',
     label: 'Date',
-    sortable: false,
+    sortable: true,
+    classList: 'text-right'
   },{
     field: 'commission',
     label: 'Gains',
     sortable: false,
+    classList: 'text-right'
   }
 ];
 
-const table = new DataTable('#table',options)
+const options = {
+    table: '#table',
+    details: false,
+    pagination: 'buttons', // 'buttons,' 
+    url: 'google.com'
+}
+
+const table = new DataTable(options, head)
 
 
 
