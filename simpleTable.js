@@ -25,6 +25,46 @@
 //     url: google.com
 // };
 
+const testData2 = {
+    "recordsFiltered":2,
+    "data":[{
+        "date":{
+            "data":"30\/01\/2020",
+            "classList":"text-right"
+        },
+        "name":{ 
+            "data":"company",
+            "classList":"text-left"
+        },
+        "type": {
+            "data":"Abonnement",
+            "classList":"text-left"
+        },
+        "commission": {
+            "data":"70,00 \u20ac",
+            "classList":"text-right"
+        }
+        },
+        {
+        "date":{
+            "data":"29\/01\/2020",
+            "classList":"text-right"
+            },
+            "name":{
+                "data":"new company with a long ass name bla vla etc......",
+                "classList":"text-left"
+            },
+                "type":{
+                    "data":"Abonnement",
+                    "classList":"text-left"
+                    },
+                    "commission":{
+                        "data":"70,00 \u20ac",
+                        "classList":"text-right"
+                    }
+    }]
+}
+
 export default class SimpleTable { 
     constructor(options, columns) {
         this.loading = true
@@ -227,7 +267,7 @@ export default class SimpleTable {
         }
     }
 
-    request(){
+    async request(){
         // Display loading 
         this.loading = true
         this.toggleLoader()
@@ -237,7 +277,18 @@ export default class SimpleTable {
         const sort = this.sorting && this.sorting.field ? this.sorting.field : null;
         const start = (this.page - 1) * this.perPage
         const filters = this.filters
+
+        // Fake request pass filters etc into request
         
+            await setTimeout(() => {
+                console.log('finished')
+                const res = testData2;
+                this.loading = false;
+                this.total = res.recordsFiltered;
+                this.renderBody(res.data);
+                this.toggleLoader();
+
+            }, 3000);
     }
 
     setFilters(filterObject){
