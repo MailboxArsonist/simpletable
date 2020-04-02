@@ -1,4 +1,4 @@
-import {DataTable} from "./simpleTable.js"
+import SimpleTable from "./simpleTable.js"
 
 const head = [{
     field: 'name',
@@ -30,7 +30,7 @@ const options = {
     url: 'google.com'
 }
 
-const table = new DataTable(options, head)
+const table = new SimpleTable(options, head)
 
 
 
