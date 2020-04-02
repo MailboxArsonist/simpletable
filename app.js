@@ -2,11 +2,11 @@ import SimpleTable from "./simpleTable.js"
 
 const head = [{
   field: 'name',
-  label: 'Enterprise',
+  label: 'User',
   sortable: false
 },{
   field: 'type',
-  label: 'Statut',
+  label: 'Type',
   sortable: false,
 },{
   field: 'date',
@@ -28,7 +28,7 @@ const options = {
     message: 'There are no results',
     classList: ['text-center']
   },
-  pagination: true, // 'buttons,' 
+  pagination: true,
   url: 'google.com'
 };
 

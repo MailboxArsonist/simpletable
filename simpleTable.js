@@ -33,11 +33,11 @@ const testData2 = {
             "classList":"text-right"
         },
         "name":{ 
-            "data":"company",
+            "data":"Jeremy",
             "classList":"text-left"
         },
         "type": {
-            "data":"Abonnement",
+            "data":"Signup",
             "classList":"text-left"
         },
         "commission": {
@@ -51,18 +51,55 @@ const testData2 = {
             "classList":"text-right"
             },
             "name":{
-                "data":"new company with a long ass name bla vla etc......",
+                "data":"John",
                 "classList":"text-left"
             },
-                "type":{
-                    "data":"Abonnement",
+            "type":{
+                "data":"Trial",
+                "classList":"text-left"
+            },
+            "commission":{
+                "data":"60,00 \u20ac",
+                "classList":"text-right"
+            }
+        },
+        {
+            "date":{
+                "data":"29\/01\/2020",
+                "classList":"text-right"
+                },
+                "name":{
+                    "data":"Tom",
                     "classList":"text-left"
+                },
+                "type":{
+                    "data":"Signup",
+                    "classList":"text-left"
+                },
+                "commission":{
+                    "data":"70,00 \u20ac",
+                    "classList":"text-right"
+                }
+            },
+            {
+                "date":{
+                    "data":"29\/01\/2020",
+                    "classList":"text-right"
+                    },
+                    "name":{
+                        "data":"Matthew",
+                        "classList":"text-left"
+                    },
+                    "type":{
+                        "data":"Trial",
+                        "classList":"text-left"
                     },
                     "commission":{
-                        "data":"70,00 \u20ac",
+                        "data":"10,00 \u20ac",
                         "classList":"text-right"
                     }
-    }]
+                }
+]
 }
 
 export default class SimpleTable { 
