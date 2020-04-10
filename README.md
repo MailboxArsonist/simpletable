@@ -55,4 +55,6 @@ new SimpleTable(options, head)
 
 5. You will also need the css file, you can simply change / take what you need.
 
+![Image description](/example-table.png)
+
 No licence, use, modify, share anywhere you like! Thanks for looking!
